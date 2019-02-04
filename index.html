@@ -4,11 +4,11 @@
 	</head>
 	
 	<script src="js/jquery-3.3.1.js"></script>
-	<script src="js/sha256.js"></script>
+	<script src="js/md5.js"></script>
 	<script>
 		$(document).ready(function(){
 			$("#submit").click(function(){
-				location.href="http://"+sha256_digest($("#flag").val())+".paracraft.club";
+				location.href="http://"+md5.hex($("#flag").val())+".paracraft.club";
 			})
 		})
 	</script>
