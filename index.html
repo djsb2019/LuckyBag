@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>杜鹃送宝 - 新春红包活动 答案提交页</title>
+	</head>
+	
+	<script src="js/jquery-3.3.1.js"></script>
+	<script src="js/sha256.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#submit").click(function(){
+				location.href="http://"+sha256_digest($("#flag").val())+".paracraft.club";
+			})
+		})
+	</script>
+	<body>
+		<div>
+			<h1>杜鹃送宝 - 新春红包活动 答案提交页</h1>
+		</div>
+		<div>
+			<div>您的答案: </div>
+			<div style="text-indent:2em">flag{<input id="flag" ></input>}</div>
+			<div><button id="submit">提交~</button></div>
+		</div>
+		<div>
+			<div style="color:#f00">注：本页面不检查答案正确与否。</div>
+		</div>
+	<body>
+</html>
